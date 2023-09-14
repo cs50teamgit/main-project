@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.container{
+    font-size: 16px;
+    border: 2px solid violet;
+    border-radius: 15px;
+    padding: 20px;
+}
