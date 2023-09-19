@@ -1,4 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* navbar styles */
+
+.navbar{
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  z-index: 999;
+  font-weight: 600;
+  position: sticky;
+}
+.navbar__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1300px;
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar__menu{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+.navbar__item{
+  padding-left: 50px;
+}
+.navbar__link{
+  color: #000;
+  text-decoration: none;
+}
+.navbar__logo{
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-decoration: none;
+  background-color: #000;
+  padding: 4px;
+  border-radius: 4px;
+}
+.navbar__logIn{
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 4px;
+  width: 100px;
+  padding: 4px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20rem;
+}
+.navbar__logIn:hover{
+  background-color: aqua;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.navbar__toggle{
+  display: fixed;
+  list-style: none;
+  padding-right: 24rem;
+}
+.navbar__signUp{
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  padding: 4px;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  background-color: #000;
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+}
+#mobile-btn{
+  display: none ;
+}
+
+@media screen and (max-width:1000px){
+  .navbar__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 40px 0 30px;
+    background-color: #d4d4d4;
+    color: #fff;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 80px;
+    right: -300px;
+    transition: ease-in-out 0.3s;
+  }
+  .navbar__logIn{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 4px;
+    width: 60px;
+    padding: 4px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 0;
+  }
+  .navbar__signUp{
+    border: none;
+    border-radius: 4px;
+    width: 60px;
+    padding: 4px;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #000;
+    font-weight: 600;
+    margin-right: 0;
+  }
+  .navbar__item{
+    padding-top: 50px;
+  }
+  #mobile-btn{
+    display: block;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .active{
+    right: 0px;
+  }
+}
+/* end of navbar styles*/
 
 /* Document
    ========================================================================== */
@@ -22,6 +163,7 @@
   
   body {
     margin: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
   }
   
   /**
