@@ -94,6 +94,9 @@
   }
   
   @media screen and (max-width:1000px){
+    .un_order_nav_link{
+      padding: 0 !important;
+    }
     #menu_icon{
       display: block;
       position: absolute;
@@ -164,6 +167,52 @@
      display: block;
       
      }
+
+  }
+  @media screen and (max-width:600px){
+    .sign__register{
+      width: 100%;
+      height: 160px !important;
+      display: flex;
+      justify-content: center;
+      
+    }
+    #enter__nav{
+      width: 70px !important;
+      height: 40px !important;
+    }
+    #reg__nav{
+      width: 90px !important;
+      height: 40px !important;
+    }
+
+    
+
+    
+  }
+  @media screen and (max-width:350px){
+    .logo{
+      font-size: 18px !important;
+      padding: 0 !important;
+      width: 60px !important;
+      height: 30px !important;
+    }
+    #menu_icon{
+      position: absolute;
+      left: 20px !important;
+      font-size: 25px !important;
+    }
+    #enter__nav{
+      width: 60px !important;
+      height: 30px !important;
+      font-size: 15px;
+    }
+    #reg__nav{
+      width: 80px !important;
+      height: 30px !important;
+      font-size: 15px;
+    }
+    
 
   }
 
