@@ -9,28 +9,29 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar__container">
-                <a href="#" class="navbar__logo">دوران</a>
-                <span id="mobile-btn" class="material-symbols-outlined">
-                    menu
-                </span>
-                <ul id="navbarMenu" class="navbar__menu">
-                    <li class="navbar__item"><a href="#" class="navbar__link">صفحه ی اصلی</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">پنل کاربری</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">تماس</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">درباره ی ما</a></li>
-                    <li class="navbar__item">
-                        <a href="#"><button class="navbar__logIn">ورود</button></a>
-                        <a href="#"><button class="navbar__signUp">ثبت نام</button></a>
-                    </li>
-                </ul>
+        
+        <nav>
+             <span id="menu_icon" class="material-symbols-outlined">
+            menu
+            </span>
+            <div class="links" id="links"> 
+                <div class="make-responsive" >
+                    <ul class="un_order_nav_link">
+                       <a href="#"> <li>صفحه اصلی</li></a>
+                       <a href="#"> <li>پنل کاربری</li></a>
+                       <a href="#"><li>تماس</li></a> 
+                       <a href="#"> <li>درباره ما</li></a>
+                        
+                    </ul>
+                    <div class="sign__register">
+                        <a id="enter__nav" href="#">ورود</a>
+                        <a id="reg__nav" href="#">ثبت نام</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="info">
-
-        </div>
+            <div class="logo"><a href="index.html" class="logo">دوران</a></div>
+        </nav>
+       
     </header>
     <main>
         <article>
@@ -53,6 +54,6 @@
             
         </div>
     </footer>
-    <script src="JS/script.js"></script>
+    <script src="./JS/menu-responsive.js"></script>
 </body>
 </html>
