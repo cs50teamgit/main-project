@@ -1,230 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* navbar styles */
-  nav{
-    width: 100%;
-    height: 70px;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-  }
-  
-  .links{
-    width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .logo{
-    width: 7%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    border-radius: 8px 0 8px 0; 
-    font-size: 20px;
-    padding: 10px;
-  }
-  .un_order_nav_link{
-    width: 500px;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    
-  }
-  .sign__register{
-    margin-right: 150px ;
-  }
-  .sign__register a{
-    width: 60px;
-    height: 25px;
-    text-decoration: none;
-    
-  }
-  #enter__nav{
-    background-color: black;
-    color: white;
-    font-size: 1.1rem;
-    padding: 8px 18px 8px 18px;
-    border-radius: 0 8px 0 8px;
-    margin-left: 20px;
-  }
-  #reg__nav{
-    background-color: white;
-    color: rgb(0, 0, 0);
-    font-size: 1.1rem;
-    padding: 8px 18px 8px 18px;
-    border-radius: 0 8px 0 8px; 
-  }
-  .un_order_nav_link li{
-    display: inline-block;
-    position: relative;
-    
-  }
-  .un_order_nav_link li::after{
-    content: '';
-    width: 0;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: 22px; 
-    transition: .4s all ease-in-out;
-  }
-  .un_order_nav_link li:hover::after{
-    width: 100%;
-  }
-  .make-responsive{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #menu_icon{
-    display: none;
-  }
-  
-  @media screen and (max-width:1000px){
-    .un_order_nav_link{
-      padding: 0 !important;
-    }
-    #menu_icon{
-      display: block;
-      position: absolute;
-      left: 50px;
-      font-size: 35px ;
-      cursor: pointer;
-      
-    }
-    .active{
-      transform: translateX(0px) !important;
-    }
-     .links{
-      width: 70%;
-      height: 100vh !important;
-      flex-direction: column;
-      background-color: rgb(80, 80, 80);
-      justify-content: flex-start;
-      position: absolute;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      overflow: auto;
-      transform: translateX(1000px);
-      transition: .5s all ease-in-out;
-      
-      
-      
-     }
-     .un_order_nav_link{
-      flex-direction: column;
-     }
-     .un_order_nav_link li{
-      margin-top: 50px;
-     }
-     .sign__register{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%)
-      ;margin-top: 50px;
-      color: white;
-     }
-     .un_order_nav_link a{
-      color: rgb(255, 255, 255) !important;
-     }
-     .un_order_nav_link a li::after{
-      background-color: white !important;
-     }
-
-
-     .logo{
-      position: absolute;
-      width: 100px !important;
-      height: 50px !important;
-      font-size: 35px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 10px 0 10px 0;
-     }
-     .sign__register{
-      margin-right:  0 !important;
-     margin-top: 100px;
-     margin-bottom: 100px;
-      
-     }
-     .make-responsive{
-      height: 500px;
-     display: block;
-      
-     }
-
-  }
-  @media screen and (max-width:600px){
-    .sign__register{
-      width: 100%;
-      height: 160px !important;
-      display: flex;
-      justify-content: center;
-      
-    }
-    #enter__nav{
-      width: 70px !important;
-      height: 40px !important;
-    }
-    #reg__nav{
-      width: 90px !important;
-      height: 40px !important;
-    }
-
-    
-
-    
-  }
-  @media screen and (max-width:350px){
-    .logo{
-      font-size: 18px !important;
-      padding: 0 !important;
-      width: 60px !important;
-      height: 30px !important;
-    }
-    #menu_icon{
-      position: absolute;
-      left: 20px !important;
-      font-size: 25px !important;
-    }
-    #enter__nav{
-      width: 60px !important;
-      height: 30px !important;
-      font-size: 15px;
-    }
-    #reg__nav{
-      width: 80px !important;
-      height: 30px !important;
-      font-size: 15px;
-    }
-    
-
-  }
-
-
-  
-
-
-/* end of navbar styles*/
-
-
-
-
 /* Document
    ========================================================================== */
 
@@ -579,12 +355,19 @@
 /*START PROJECT*/
 
 
-*{
-    box-sizing: border-box;
+html{
+  box-sizing: border-box;
 }
 
-a:hover{
-    text-decoration: none;
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
 }
 
 .container{
@@ -593,3 +376,240 @@ a:hover{
     border-radius: 15px;
     padding: 20px;
 }
+
+/* navbar styles */
+nav{
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.links{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  width: 7%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 8px 0 8px 0; 
+  font-size: 20px;
+  padding: 10px;
+}
+
+.un_order_nav_link{
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  
+}
+
+.sign__register{
+  margin-right: 150px ;
+}
+
+.sign__register a{
+  width: 60px;
+  height: 25px;
+  text-decoration: none;
+  
+}
+
+#enter__nav{
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  padding: 8px 18px 8px 18px;
+  border-radius: 0 8px 0 8px;
+  margin-left: 20px;
+}
+
+#reg__nav{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  padding: 8px 18px 8px 18px;
+  border-radius: 0 8px 0 8px; 
+}
+
+.un_order_nav_link li{
+  display: inline-block;
+  position: relative;
+  
+}
+
+.un_order_nav_link li::after{
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 22px; 
+  transition: .4s all ease-in-out;
+}
+
+.un_order_nav_link li:hover::after{
+  width: 100%;
+}
+
+.make-responsive{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#menu_icon{
+  display: none;
+}
+
+@media screen and (max-width:1000px){
+  .un_order_nav_link{
+    padding: 0 !important;
+  }
+  #menu_icon{
+    display: block;
+    position: absolute;
+    left: 50px;
+    font-size: 35px ;
+    cursor: pointer;
+    
+  }
+  .active{
+    transform: translateX(0px) !important;
+  }
+   .links{
+    width: 70%;
+    height: 100vh !important;
+    flex-direction: column;
+    background-color: rgb(80, 80, 80);
+    justify-content: flex-start;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: auto;
+    transform: translateX(1000px);
+    transition: .5s all ease-in-out;
+    
+    
+    
+   }
+   .un_order_nav_link{
+    flex-direction: column;
+   }
+   .un_order_nav_link li{
+    margin-top: 50px;
+   }
+   .sign__register{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+    ;margin-top: 50px;
+    color: white;
+   }
+   .un_order_nav_link a{
+    color: rgb(255, 255, 255) !important;
+   }
+   .un_order_nav_link a li::after{
+    background-color: white !important;
+   }
+
+
+   .logo{
+    position: absolute;
+    width: 100px !important;
+    height: 50px !important;
+    font-size: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 0 10px 0;
+   }
+   .sign__register{
+    margin-right:  0 !important;
+   margin-top: 100px;
+   margin-bottom: 100px;
+    
+   }
+   .make-responsive{
+    height: 500px;
+   display: block;
+    
+   }
+
+}
+@media screen and (max-width:600px){
+  .sign__register{
+    width: 100%;
+    height: 160px !important;
+    display: flex;
+    justify-content: center;
+    
+  }
+  #enter__nav{
+    width: 70px !important;
+    height: 40px !important;
+  }
+  #reg__nav{
+    width: 90px !important;
+    height: 40px !important;
+  }
+
+  
+
+  
+}
+@media screen and (max-width:350px){
+  .logo{
+    font-size: 18px !important;
+    padding: 0 !important;
+    width: 60px !important;
+    height: 30px !important;
+  }
+  #menu_icon{
+    position: absolute;
+    left: 20px !important;
+    font-size: 25px !important;
+  }
+  #enter__nav{
+    width: 60px !important;
+    height: 30px !important;
+    font-size: 15px;
+  }
+  #reg__nav{
+    width: 80px !important;
+    height: 30px !important;
+    font-size: 15px;
+  }
+  
+
+}
+
+
+
+
+
+/* end of navbar styles*/
