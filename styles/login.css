@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background: linear-gradient(184deg, rgba(95,50,163,1) 0%, rgba(18,1,66,1) 100%);
 }
 .purple-rectangle {
     position: absolute;
@@ -21,13 +21,30 @@ body {
     overflow-x: auto;
     white-space: nowrap;
 }
+
 .container {
     max-width: 85%;
+    height: 100vh;
+    padding: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
 }
+
+.container-background{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .media-options a{
     display: flex;
     align-items: center;
