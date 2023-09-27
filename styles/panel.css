@@ -7,7 +7,8 @@
     font-family: worksans-semibold;
     src: url(../fonts/WorkSans-SemiBold.ttf);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
 :root{
     font-size: 16px;
     --hour: 46.45px;
@@ -201,3 +202,94 @@ h1{
 .container-table__other{
     
 }
+/* HEADERS STYLE *//* HEADERS STYLE */
+    header{
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header a{
+        color: rgba(0, 0, 0, 0.479);
+        text-decoration: none;
+        font-family: 'Cairo', sans-serif !important;
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Righteous', cursive;
+        display: inline-block;
+        position: relative;
+    }
+    .list-nav-panel{
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.2rem;
+        flex-direction: row-reverse;
+        list-style-type: none;
+      
+    }
+    header a::after{
+        content: '';
+        width: 0;
+        height: 0.5px;
+        position: absolute;
+        top:22px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.579);
+        transition: .2s all ease-in-out;
+    }
+    header a:hover{
+        color: black;
+    }
+    header a:hover::after{
+        width: 100%;
+    }
+    
+    #menu_icon{
+        display: none;
+    }
+    @media screen and (max-width:1000px){
+        header{
+            flex-direction: column-reverse;
+            position: relative;
+        }
+        #menu_icon{
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .list-nav-panel{
+           width: 100%;
+           position: absolute;
+           height: 250px;
+           top: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;  
+            background-color: rgb(255, 255, 255);
+            color: white !important;
+            z-index: 999999;
+            margin: 0 !important;
+            border-bottom: 2px solid black;
+            padding: 100px;
+            transform: translateY(-500px);
+            transition: .4s all ease-in-out;
+            
+        }
+        .list-nav-panel a{
+            margin-top: 15px !important;
+        }
+        
+        .active1{
+            transform: translateY(0PX);   
+        }
+
+    
+    }
+/* HEADERS STYLE *//* HEADERS STYLE */
