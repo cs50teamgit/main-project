@@ -377,6 +377,24 @@ body{
     padding: 20px;
 }
 
+.header-img{
+  background-image: url(../img/daniele-levis-pelusi-Pp9qkEV_xPk-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 770px;
+  width: 100%;
+  position: relative;
+}
+
+.header-text{
+  position: absolute;
+  bottom: 10rem;
+  right: 10rem;
+  color: white;
+  font-size: 3rem;
+}
+
 /* navbar styles */
 nav{
   width: 100%;
