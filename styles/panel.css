@@ -66,6 +66,7 @@ h1{
     border-radius: 0.5rem;
     justify-content: space-evenly;
     padding: 2rem 0rem;
+    position: relative;
 }
 
 .container-block{
@@ -153,6 +154,7 @@ h1{
 
 .container-table{
     margin-top: 7rem;
+    
 }
 
 .container-table__today{
@@ -191,6 +193,14 @@ h1{
     border: 1px solid #d9d9d9;
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-table__details>div{
+    width: 100px !important;
+    height: 100% !important;
+    
 }
 
 .container-table__detail__1{
@@ -210,6 +220,9 @@ h1{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: fixed;
+        position: absolute;
+        top: 0;
     }
     header a{
         color: rgba(0, 0, 0, 0.479);
@@ -250,10 +263,29 @@ h1{
     #menu_icon{
         display: none;
     }
+    .make-nav-fix{
+        display: none;
+    }
+    #make-nav-fix{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(102, 51, 153, 0.449);
+        position: fixed;
+        position: absolute;
+        top: 0;
+        z-index: 999999999999990;
+        display: none;
+        
+    }
+    .active_menu{
+        display: block !important;
+    }
     @media screen and (max-width:1000px){
         header{
             flex-direction: column-reverse;
             position: relative;
+            
+            background-color: white !important;
         }
         #menu_icon{
             display: block;
@@ -261,6 +293,8 @@ h1{
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
+            cursor: pointer;
+          
             
         }
         .list-nav-panel{
@@ -280,6 +314,7 @@ h1{
             padding: 100px;
             transform: translateY(-500px);
             transition: .4s all ease-in-out;
+            z-index: 99999999999999999999999999999999999999999 !important;
             
         }
         .list-nav-panel a{
@@ -289,7 +324,16 @@ h1{
         .active1{
             transform: translateY(0PX);   
         }
-
+       
+       
     
+    }
+    .make-panel-inside{
+        min-width: 150px !important;
+        min-height: 10px !important;
+        background-color: rgb(80, 192, 10);
+        
+        position: fixed;
+        
     }
 /* HEADERS STYLE *//* HEADERS STYLE */
