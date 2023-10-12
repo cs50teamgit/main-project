@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 85%;
+    max-width: 95%;
     height: 100vh;
     padding: 10rem;
     display: flex;
@@ -142,7 +142,7 @@ a.google span{
 }
 .text {
     direction: rtl;
-    margin-left: 200px;
+    margin-left: 1.5rem;
 }
 .text h1 {
     font-size: 40px;
