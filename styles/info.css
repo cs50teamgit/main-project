@@ -12,33 +12,26 @@ body{
     background-color: #fcfcfc;
 }
 
-.map-container{
+.info-container{
     display: flex;
     height: 770px;
     width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
 }
 
-.map-container__countries{
-    transform: scale(50%);
-    justify-content: center;
-    align-items: center;
+.info-container__img{
+    transform: scale(100%);
 }
 
-.map-hour{
-    position: absolute;
-    top: 30%;
-    right: 38%;
-    font-family: "Vazir";
+.info-header{
     font-weight: bold;
-    font-size: 4rem;
-    color: rgba(95,50,163,1);
 }
 
-.map-country__name{
-    position: absolute;
-    top: 43%;
-    right: 52.6%;
-    color: white;
+.info-wrapper{
+    text-wrap: wrap;
+    max-width: 30rem;
     font-family: "Vazir";
+    line-height: 1.5rem;
 }
