@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Vazir'; 
+    src: url(../fonts/Vazir-Regular.woff) format('woff'), 
+         url(../fonts/Vazir-Regular.woff2) format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcfcfc;
+}
+
+.map-container{
+    display: flex;
+    height: 770px;
+    width: 100%;
+    position: relative;
+}
+
+.map-container__countries{
+    transform: scale(50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.map-hour{
+    position: absolute;
+    top: 30%;
+    right: 38%;
+    font-family: "Vazir";
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgba(95,50,163,1);
+}
+
+.map-country__name{
+    position: absolute;
+    top: 43%;
+    right: 52.2%;
+    color: white;
+    font-family: "Vazir";
+}
